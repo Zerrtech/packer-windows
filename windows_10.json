@@ -127,6 +127,12 @@
       "keep_input_artifact": false,
       "output": "windows_10_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_10.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_10",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
@@ -134,6 +140,8 @@
     "iso_checksum_type": "sha1",
     "iso_checksum": "6c60f91bf0ad7b20f469ab8f80863035c517f34f",
     "autounattend": "./answer_files/10/Autounattend.xml",
-    "disk_size": "61440"
+    "disk_size": "61440",
+    "version": "1",
+    "access_token": ""
   }
 }

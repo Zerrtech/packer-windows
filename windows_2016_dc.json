@@ -153,6 +153,12 @@
       "keep_input_artifact": false,
       "output": "windows_2016_dc_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2016.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_2016_docker",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
@@ -162,6 +168,8 @@
     "autounattend": "./answer_files/2016_core/Autounattend.xml",
     "DomainName": "windomain.local",
     "DomainNetbiosName": "windom",
-    "SafeModeAdministratorPassword": "BadAdminPassword!"
+    "SafeModeAdministratorPassword": "BadAdminPassword!",
+    "version": "1",
+    "access_token": ""
   }
 }

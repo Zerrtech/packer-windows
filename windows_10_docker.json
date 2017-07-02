@@ -59,9 +59,17 @@
       "keep_input_artifact": false,
       "output": "windows_10_docker_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_10.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_10_docker",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
-    "source_path": "~/.vagrant.d/boxes/windows_10/0/vmware_desktop/windows_10.vmx"
+    "source_path": "~/.vagrant.d/boxes/windows_10/0/vmware_desktop/windows_10.vmx",
+    "version": "1",
+    "access_token": ""
   }
 }

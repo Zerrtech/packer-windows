@@ -142,6 +142,12 @@
       "keep_input_artifact": false,
       "output": "windows_2016_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2016.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_2016",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
@@ -149,6 +155,8 @@
     "iso_checksum_type": "md5",
     "iso_checksum": "70721288BBCDFE3239D8F8C0FAE55F1F",
     "autounattend": "./answer_files/2016/Autounattend.xml",
-    "hyperv_switchname": "{{env `hyperv_switchname`}}"
+    "hyperv_switchname": "{{env `hyperv_switchname`}}",
+    "version": "1",
+    "access_token": ""
   }
 }
