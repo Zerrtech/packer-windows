@@ -141,7 +141,7 @@
     "iso_checksum": "6c60f91bf0ad7b20f469ab8f80863035c517f34f",
     "autounattend": "./answer_files/10/Autounattend.xml",
     "disk_size": "61440",
-    "version": "1",
+    "version": "1.0.{{timestamp}}",
     "access_token": ""
   }
 }

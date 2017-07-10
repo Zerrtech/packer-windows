@@ -169,7 +169,7 @@
     "DomainName": "windomain.local",
     "DomainNetbiosName": "windom",
     "SafeModeAdministratorPassword": "BadAdminPassword!",
-    "version": "1",
+    "version": "1.0.{{timestamp}}",
     "access_token": ""
   }
 }
