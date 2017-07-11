@@ -99,6 +99,6 @@
     "iso_checksum": "70721288BBCDFE3239D8F8C0FAE55F1F",
     "autounattend": "./answer_files/2016_core/Autounattend.xml",
     "version": "1.0.{{timestamp}}",
-    "access_token": ""
+    "access_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}"
   }
 }

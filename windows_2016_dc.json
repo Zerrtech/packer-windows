@@ -170,6 +170,6 @@
     "DomainNetbiosName": "windom",
     "SafeModeAdministratorPassword": "BadAdminPassword!",
     "version": "1.0.{{timestamp}}",
-    "access_token": ""
+    "access_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}"
   }
 }

@@ -157,6 +157,6 @@
     "autounattend": "./answer_files/2016/Autounattend.xml",
     "hyperv_switchname": "{{env `hyperv_switchname`}}",
     "version": "1.0.{{timestamp}}",
-    "access_token": ""
+    "access_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}"
   }
 }

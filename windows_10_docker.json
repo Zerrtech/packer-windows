@@ -70,6 +70,6 @@
   "variables": {
     "source_path": "~/.vagrant.d/boxes/windows_10/0/vmware_desktop/windows_10.vmx",
     "version": "1.0.{{timestamp}}",
-    "access_token": ""
+    "access_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}"
   }
 }
