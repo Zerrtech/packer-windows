@@ -150,7 +150,6 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "keep_input_artifact": false,
       "output": "windows_10_docker_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_10.template"
     },
@@ -169,6 +168,6 @@
     "disk_size": "61440",
     "version": "1.0.{{timestamp}}",
     "access_token": "{{ env `ATLAS_TOKEN` }}",
-    "version": "1.0.{{timestamp}}",
+    "version": "1.0.{{timestamp}}"
   }
 }
