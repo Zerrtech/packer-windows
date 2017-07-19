@@ -60,7 +60,7 @@
         "RemoteDisplay.vnc.enabled": "false",
         "RemoteDisplay.vnc.port": "5900",
         "memsize": "2048",
-        "numvcpus": "2",
+        "numvcpus": "1",
         "scsi0.virtualDev": "lsisas1068"
       }
     },
@@ -101,7 +101,7 @@
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "2"
+          "1"
         ]
       ]
     }
@@ -157,6 +157,6 @@
     "autounattend": "./answer_files/2016/Autounattend.xml",
     "hyperv_switchname": "{{env `hyperv_switchname`}}",
     "version": "1.0.{{timestamp}}",
-    "access_token": "{{ env `VAGRANT_CLOUD_TOKEN` }}"
+    "access_token": "{{ env `ATLAS_TOKEN` }}"
   }
 }

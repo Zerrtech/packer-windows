@@ -24,7 +24,7 @@
       "RemoteDisplay.vnc.enabled": "false",
       "RemoteDisplay.vnc.port": "5900",
       "memsize": "2048",
-      "numvcpus": "2",
+      "numvcpus": "1",
 	  "scsi0.virtualDev": "lsisas1068"
     }
   }, {
@@ -48,7 +48,7 @@
     ],
     "vboxmanage": [
       ["modifyvm", "{{.Name}}", "--memory", "2048"],
-      ["modifyvm", "{{.Name}}", "--cpus", "2"]
+      ["modifyvm", "{{.Name}}", "--cpus", "1"]
     ]
   }],
   "provisioners": [{

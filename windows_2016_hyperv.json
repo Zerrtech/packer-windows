@@ -53,7 +53,7 @@
         "RemoteDisplay.vnc.enabled": "false",
         "RemoteDisplay.vnc.port": "5900",
         "memsize": "2048",
-        "numvcpus": "2",
+        "numvcpus": "1",
         "scsi0.virtualDev": "lsisas1068"
       }
     },
@@ -91,7 +91,7 @@
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          "2"
+          "1"
         ]
       ]
     }
@@ -125,12 +125,19 @@
       "keep_input_artifact": false,
       "output": "windows_2016_hyperv_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2016.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_2016",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
     "iso_url": "http://care.dlservice.microsoft.com/dl/download/8/8/6/886DAAEF-81A7-4418-82D5-07D33B816962/14393.0.161119-1705.RS1_REFRESH_SERVERHYPERCORE_OEM_X64FRE_EN-US.ISO",
     "iso_checksum_type": "sha256",
     "iso_checksum": "53e2f01dc4077192a85f60f8d2ffb02189074e19b25f990cbe9eb767328d3fb6",
-    "autounattend": "./answer_files/2016_hyperv/Autounattend.xml"
+    "autounattend": "./answer_files/2016_hyperv/Autounattend.xml",
+    "access_token": "{{ env `ATLAS_TOKEN` }}"
   }
 }
