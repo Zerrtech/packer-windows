@@ -153,7 +153,6 @@
       "output": "windows_10_docker_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_10.template"
     },
-    
     {
       "type": "vagrant-cloud",
       "box_tag": "alpine-digital-research/windows-10-docker",
