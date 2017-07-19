@@ -129,7 +129,7 @@
     },
     {
       "type": "vagrant-cloud",
-      "box_tag": "alpine-digital-research/windows_10_insider",
+      "box_tag": "alpine-digital-research/windows-10-insider",
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }

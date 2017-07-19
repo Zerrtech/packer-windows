@@ -88,7 +88,7 @@
     },
     {
       "type": "vagrant-cloud",
-      "box_tag": "alpine-digital-research/windows_2016_docker_core",
+      "box_tag": "alpine-digital-research/windows-2016-docker-core",
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }

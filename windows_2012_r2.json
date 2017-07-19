@@ -92,6 +92,18 @@
       "keep_input_artifact": false,
       "output": "windows_2012_r2_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2012_r2.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows_2016",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows-2012-r2",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
   ],
   "variables": {
@@ -99,6 +111,7 @@
     "iso_checksum_type": "md5",
     "iso_checksum": "5b5e08c490ad16b59b1d9fab0def883a",
     "autounattend": "./answer_files/2012_r2/Autounattend.xml",
+    "version": "1.0.{{timestamp}}",
     "access_token": "{{ env `ATLAS_TOKEN` }}"
   }
 }

@@ -145,7 +145,7 @@
     },
     {
       "type": "vagrant-cloud",
-      "box_tag": "alpine-digital-research/windows_2016",
+      "box_tag": "alpine-digital-research/windows-2016",
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }

@@ -77,6 +77,16 @@
       "keep_input_artifact": false,
       "output": "windows_2008_r2_core_{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows_2008_r2.template"
+    },
+    {
+      "type": "vagrant-cloud",
+      "box_tag": "alpine-digital-research/windows-2008-r2-core",
+      "version": "{{ user `version` }}",
+      "access_token": "{{ user `access_token` }}"
     }
-  ]
+  ],
+  "variables": {
+    "version": "1.0.{{timestamp}}",
+    "access_token": "{{ env `ATLAS_TOKEN` }}"
+  }
 }
