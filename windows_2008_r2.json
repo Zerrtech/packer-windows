@@ -68,7 +68,7 @@
       ]
     }
   ],
-  "provisioners": [
+  "provisioners": [[
     {
       "type": "shell",
       "remote_path": "/tmp/script.bat",
@@ -87,7 +87,7 @@
         "rm -rf /tmp/*"
       ]
     }
-  ],
+  ]],
   "post-processors": [
     {
       "type": "vagrant",

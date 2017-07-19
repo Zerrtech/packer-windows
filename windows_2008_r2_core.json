@@ -71,7 +71,7 @@
       ]
     }
   ],
-  "post-processors": [
+  "post-processors": [[
     {
       "type": "vagrant",
       "keep_input_artifact": false,
@@ -84,7 +84,7 @@
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }
-  ],
+  ]],
   "variables": {
     "version": "1.0.{{timestamp}}",
     "access_token": "{{ env `ATLAS_TOKEN` }}"

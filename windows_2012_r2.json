@@ -86,7 +86,7 @@
       ]
     }
   ],
-  "post-processors": [
+  "post-processors": [[
     {
       "type": "vagrant",
       "keep_input_artifact": false,
@@ -95,17 +95,11 @@
     },
     {
       "type": "vagrant-cloud",
-      "box_tag": "alpine-digital-research/windows_2016",
-      "version": "{{ user `version` }}",
-      "access_token": "{{ user `access_token` }}"
-    },
-    {
-      "type": "vagrant-cloud",
       "box_tag": "alpine-digital-research/windows-2012-r2",
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }
-  ],
+  ]],
   "variables": {
     "iso_url": "http://care.dlservice.microsoft.com/dl/download/6/2/A/62A76ABB-9990-4EFC-A4FE-C7D698DAEB96/9600.17050.WINBLUE_REFRESH.140317-1640_X64FRE_SERVER_EVAL_EN-US-IR3_SSS_X64FREE_EN-US_DV9.ISO",
     "iso_checksum_type": "md5",

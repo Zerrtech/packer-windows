@@ -120,7 +120,7 @@
       ]
     }
   ],
-  "post-processors": [
+  "post-processors": [[
     {
       "type": "vagrant",
       "keep_input_artifact": false,
@@ -133,9 +133,9 @@
       "version": "{{ user `version` }}",
       "access_token": "{{ user `access_token` }}"
     }
-  ],
+  ]],
   "variables": {
-    
+
     "manually_download_iso_from": "https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewadvanced",
     "iso_url": "https://software-download.microsoft.com/pr/Windows10_InsiderPreview_EnterpriseVL_x64_en-us_15042.iso",
     "iso_checksum_type": "sha1",
